@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Колмыков Михаил</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap');
+    
+    :root {
+      --bg: #121212;
+      --card-bg: #1e1e1e;
+      --text: #e0e0e0;
+      --accent: #64ffda;
+      --font: 'Roboto Mono', monospace;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font);
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      padding: 20px;
+      font-weight: 500;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 40px;
+      background-color: var(--card-bg);
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    h1, h2, h3 {
+      color: var(--accent);
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+      font-weight: 700;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-top: 0;
+    }
+
+    p {
+      margin: 0.8em 0;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    ul {
+      padding-left: 1.5em;
+    }
+
+    li {
+      margin-bottom: 0.5em;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #aaa;
+      text-align: center;
+    }
+
+    .section {
+      margin-bottom: 2.5em;
+    }
+
+    .highlight {
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .key-points {
+      background: rgba(100, 255, 218, 0.1);
+      border-left: 3px solid var(--accent);
+      padding: 15px 20px;
+      margin: 20px 0;
+      border-radius: 0 4px 4px 0;
+    }
+
+    .key-points h3 {
+      margin-top: 0;
+      color: var(--accent);
+    }
+
+    .key-points ul {
+      margin: 10px 0;
+    }
+
+    /* Language toggle */
+    .language-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: var(--card-bg);
+      border: 2px solid var(--accent);
+      color: var(--accent);
+      padding: 10px 15px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-family: var(--font);
+      font-weight: 600;
+      font-size: 14px;
+      transition: all 0.3s ease;
+      z-index: 1000;
+    }
+
+    .language-toggle:hover {
+      background: var(--accent);
+      color: var(--card-bg);
+    }
+
+    /* Hidden content */
+    .content-ru, .content-en {
+      display: none;
+    }
+
+    .content-ru.active, .content-en.active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <button class="language-toggle" id="langToggle">EN</button>
+
+  <div class="container">
+    <!-- Russian Version -->
+    <div class="content-ru active" id="content-ru">
+      <header>
+        <h1>Колмыков Михаил</h1>
+        <p>Senior SCADA Engineer | Full-stack Developer | Python Enthusiast</p>
+      </header>
+
+      <div class="key-points">
+        <h3>Ключевые навыки и достижения</h3>
+        <ul>
+          <li><span class="highlight">18+ лет опыта</span> в IT и автоматизации</li>
+          <li>Эксперт в <span class="highlight">SCADA-системах Wonderware</span></li>
+          <li>Разработка на <span class="highlight">C#, Python, Java, Delphi</span></li>
+          <li>Победитель корпоративного конкурса <span class="highlight">"Лучший инженер-программист"</span></li>
+          <li>Опыт в <span class="highlight">DevOps, Linux, сетевых технологиях</span></li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Профиль</h2>
+        <p>
+          Инженер-программист с 18-летним опытом работы в промышленной автоматизации и корпоративных системах. 
+          Специализируюсь на разработке SCADA-систем, автоматизации бизнес-процессов и создании эффективных решений 
+          для промышленных предприятий. Активно развиваюсь в направлении Python и современных технологий разработки.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>Профессиональный опыт</h2>
+        
+        <h3>Ведущий инженер SCADA | Крупная газовая компания | 2016–н.в.</h3>
+        <p>
+          Разработка и сопровождение SCADA-систем на платформе <span class="highlight">Wonderware System Platform</span>:
+        </p>
+        <ul>
+          <li>Проектирование и реализация систем мониторинга и управления технологическими процессами</li>
+          <li>Разработка <span class="highlight">вспомогательных .NET-приложений</span> (C#, WinForms, MS SQL) для автоматизации рутинных задач</li>
+          <li>Оптимизация производительности систем, снижение времени обработки данных на <span class="highlight">30%</span></li>
+          <li>Анализ и модернизация legacy-кода на <span class="highlight">Java 8/GWT 2.5.0</span></li>
+          <li>Менторство для младших специалистов, передача знаний и best practices</li>
+        </ul>
+
+        <h3>Системный администратор | Газовая компания | 2007–2016</h3>
+        <p>
+          Комплексная IT-поддержка филиала крупной корпорации:
+        </p>
+        <ul>
+          <li>Администрирование серверов и рабочих станций, поддержка 1С и корпоративных систем</li>
+          <li>Обеспечение бесперебойной работы критически важных систем 24/7</li>
+          <li>Решение инцидентов и выезды на объекты, включая <span class="highlight">ночные работы</span></li>
+          <li>Оптимизация IT-процессов, снижение времени простоя на <span class="highlight">25%</span></li>
+        </ul>
+
+        <h3>IT-специалист | Различные компании | 2006–2007</h3>
+        <ul>
+          <li>Первый опыт работы с <span class="highlight">Linux</span> и серверными технологиями</li>
+          <li>Техническая поддержка пользователей, сборка и настройка компьютеров</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Образование и достижения</h2>
+        <p>
+          <span class="highlight">Самарский Государственный Политехнический Университет</span> (2006)<br>
+          Специальность: Автоматизированные системы управления технологическими процессами
+        </p>
+        <p>
+          <span class="highlight">Дипломная работа</span>: Программа АСТУР (Автоматизированная Система Тест Умственного Развития), 
+          разработанная на Delphi 6 с последующими доработками
+        </p>
+        <p>
+          <span class="highlight">2015</span>: Победитель корпоративного конкурса "Лучший инженер-программист" 
+          (денежная премия, медаль, кубок, диплом)
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>Технические навыки</h2>
+        <div class="key-points">
+          <h3>Языки программирования и технологии</h3>
+          <ul>
+            <li><span class="highlight">C#</span> (WinForms, .NET Framework, MS SQL Server)</li>
+            <li><span class="highlight">Python</span> (активное изучение, автоматизация задач)</li>
+            <li><span class="highlight">Java</span> (legacy GWT 2.5.0, модификация существующего кода)</li>
+            <li><span class="highlight">Delphi</span> (опыт разработки дипломного проекта)</li>
+            <li><span class="highlight">SQL</span> (MS SQL Server, запросы, оптимизация)</li>
+          </ul>
+        </div>
+
+        <div class="key-points">
+          <h3>Системы и платформы</h3>
+          <ul>
+            <li><span class="highlight">SCADA Wonderware System Platform</span> (экспертный уровень)</li>
+            <li><span class="highlight">Linux</span> (возвращаюсь к изучению после перерыва)</li>
+            <li><span class="highlight">Сетевые технологии</span> (понимание протоколов, архитектуры)</li>
+            <li><span class="highlight">1С</span> (администрирование и поддержка)</li>
+            <li><span class="highlight">DevOps-практики</span> (Git, CI/CD, контейнеризация)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Профессиональное развитие</h2>
+        <p>
+          Активно развиваюсь в направлении современной разработки программного обеспечения:
+        </p>
+        <ul>
+          <li>Прохожу курс по Python в <span class="highlight">Нетологии</span></li>
+          <li>Изучаю практики использования <span class="highlight">искусственного интеллекта</span> в разработке</li>
+          <li>Осваиваю <span class="highlight">сетевые технологии</span> и архитектуру современных систем</li>
+          <li>Изучаю <span class="highlight">DevOps-подходы</span> для автоматизации процессов разработки и эксплуатации</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Личные качества</h2>
+        <p>
+          Сторонник <span class="highlight">трезвой жизни</span> и здорового образа жизни. Каждое утро начинаю с зарядки. 
+          Люблю <span class="highlight">гранатовый сок</span>. Глубоко люблю свою семью — жену и детей. 
+          Верю, что никогда не поздно учиться новому и развиваться профессионально.
+        </p>
+      </div>
+
+      <footer>
+        <p>© Колмыков Михаил, 2025</p>
+        <p style="font-size: 0.8em; margin-top: 10px;">
+          Готов к новым вызовам и интересным проектам
+        </p>
+      </footer>
+    </div>
+
+    <!-- English Version -->
+    <div class="content-en" id="content-en">
+      <header>
+        <h1>Mikhail Kolmykov</h1>
+        <p>Senior SCADA Engineer | Full-stack Developer | Python Enthusiast</p>
+      </header>
+
+      <div class="key-points">
+        <h3>Key Skills and Achievements</h3>
+        <ul>
+          <li><span class="highlight">18+ years of experience</span> in IT and industrial automation</li>
+          <li>Expert in <span class="highlight">Wonderware SCADA systems</span></li>
+          <li>Development in <span class="highlight">C#, Python, Java, Delphi</span></li>
+          <li>Winner of corporate <span class="highlight">"Best Software Engineer"</span> competition</li>
+          <li>Experience in <span class="highlight">DevOps, Linux, network technologies</span></li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Profile</h2>
+        <p>
+          Software engineer with 18 years of experience in industrial automation and corporate systems. 
+          Specializing in SCADA system development, business process automation, and creating efficient solutions 
+          for industrial enterprises. Actively developing in Python and modern development technologies.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>Professional Experience</h2>
+        
+        <h3>Lead SCADA Engineer | Major Gas Company | 2016–present</h3>
+        <p>
+          Development and maintenance of SCADA systems on <span class="highlight">Wonderware System Platform</span>:
+        </p>
+        <ul>
+          <li>Design and implementation of monitoring and control systems for technological processes</li>
+          <li>Development of <span class="highlight">auxiliary .NET applications</span> (C#, WinForms, MS SQL) for routine task automation</li>
+          <li>System performance optimization, reducing data processing time by <span class="highlight">30%</span></li>
+          <li>Analysis and modernization of legacy code on <span class="highlight">Java 8/GWT 2.5.0</span></li>
+          <li>Mentoring junior specialists, knowledge transfer and best practices</li>
+        </ul>
+
+        <h3>System Administrator | Gas Company | 2007–2016</h3>
+        <p>
+          Comprehensive IT support for a major corporation branch:
+        </p>
+        <ul>
+          <li>Server and workstation administration, 1C and corporate systems support</li>
+          <li>Ensuring 24/7 operation of mission-critical systems</li>
+          <li>Incident resolution and field visits, including <span class="highlight">night work</span></li>
+          <li>IT process optimization, reducing downtime by <span class="highlight">25%</span></li>
+        </ul>
+
+        <h3>IT Specialist | Various Companies | 2006–2007</h3>
+        <ul>
+          <li>First experience with <span class="highlight">Linux</span> and server technologies</li>
+          <li>Technical support, computer assembly and configuration</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Education and Achievements</h2>
+        <p>
+          <span class="highlight">Samara State Technical University</span> (2006)<br>
+          Specialty: Automated Control Systems for Technological Processes
+        </p>
+        <p>
+          <span class="highlight">Thesis Project</span>: ASTUR program (Automated System for Testing Mental Development), 
+          developed in Delphi 6 with subsequent improvements
+        </p>
+        <p>
+          <span class="highlight">2015</span>: Winner of corporate "Best Software Engineer" competition 
+          (cash prize, medal, cup, diploma)
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>Technical Skills</h2>
+        <div class="key-points">
+          <h3>Programming Languages and Technologies</h3>
+          <ul>
+            <li><span class="highlight">C#</span> (WinForms, .NET Framework, MS SQL Server)</li>
+            <li><span class="highlight">Python</span> (active learning, task automation)</li>
+            <li><span class="highlight">Java</span> (legacy GWT 2.5.0, existing code modification)</li>
+            <li><span class="highlight">Delphi</span> (thesis project development experience)</li>
+            <li><span class="highlight">SQL</span> (MS SQL Server, queries, optimization)</li>
+          </ul>
+        </div>
+
+        <div class="key-points">
+          <h3>Systems and Platforms</h3>
+          <ul>
+            <li><span class="highlight">SCADA Wonderware System Platform</span> (expert level)</li>
+            <li><span class="highlight">Linux</span> (returning to study after a break)</li>
+            <li><span class="highlight">Network Technologies</span> (protocol understanding, architecture)</li>
+            <li><span class="highlight">1C</span> (administration and support)</li>
+            <li><span class="highlight">DevOps Practices</span> (Git, CI/CD, containerization)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Professional Development</h2>
+        <p>
+          Actively developing in modern software development:
+        </p>
+        <ul>
+          <li>Taking Python course at <span class="highlight">Netology</span></li>
+          <li>Studying <span class="highlight">artificial intelligence</span> practices in development</li>
+          <li>Mastering <span class="highlight">network technologies</span> and modern system architecture</li>
+          <li>Learning <span class="highlight">DevOps approaches</span> for development and operations automation</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Personal Qualities</h2>
+        <p>
+          Supporter of <span class="highlight">sober living</span> and healthy lifestyle. Start every morning with exercise. 
+          Love <span class="highlight">pomegranate juice</span>. Deeply love my family - wife and children. 
+          Believe it's never too late to learn something new and develop professionally.
+        </p>
+      </div>
+
+      <footer>
+        <p>© Mikhail Kolmykov, 2025</p>
+        <p style="font-size: 0.8em; margin-top: 10px;">
+          Ready for new challenges and interesting projects
+        </p>
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    const langToggle = document.getElementById('langToggle');
+    const contentRu = document.getElementById('content-ru');
+    const contentEn = document.getElementById('content-en');
+    let currentLang = 'ru';
+
+    langToggle.addEventListener('click', () => {
+      if (currentLang === 'ru') {
+        contentRu.classList.remove('active');
+        contentEn.classList.add('active');
+        langToggle.textContent = 'RU';
+        currentLang = 'en';
+        document.documentElement.lang = 'en';
+      } else {
+        contentEn.classList.remove('active');
+        contentRu.classList.add('active');
+        langToggle.textContent = 'EN';
+        currentLang = 'ru';
+        document.documentElement.lang = 'ru';
+      }
+    });
+  </script>
+</body>
+</html>
